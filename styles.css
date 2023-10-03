@@ -1,0 +1,150 @@
+/*  default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*navigation menu */
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00a7fa;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.fixed-menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.fixed-menu li {
+    margin: 0;
+    padding: 14px;
+}
+
+.fixed-menu a {
+    text-decoration: tomato;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+   
+}
+
+.fixed-menu a:hover {
+    color: black;
+    transition: 0.3s ease;
+
+}
+
+/* sections for demonstration */
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    color: #050505;
+}
+
+.section h1, .section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.section ul {
+    list-style-type: none;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+
+/*  products section */
+.product {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    max-width: 50%;
+    height: 300px;
+    width: 700px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/*contact form */
+form {
+    text-align: left;
+    max-width: 400px;
+    margin: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0072ff;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* background image */
+.background-image {
+    position: relative;
+    top: 10px;
+    width: 900px;
+    height: 500px;
+    background-image: url('https://th.bing.com/th/id/R.c757ef64160d45622943f0753ce4cf9f?rik=6fhxvMJNCPWSSw&riu=http%3a%2f%2fwww.medicalassociatestt.info%2fwp-content%2fuploads%2f2017%2f10%2f1503411077revised-bhatia-homebanner-03.jpg&ehk=wYsrBwIcqOfL%2b1cQMhOoZKLq9CAbupccp8H%2bdza7AHw%3d&risl=&pid=ImgRaw&r=0');
+    background-size: absolute;
+    background-position: absolute;
+    opacity: 1; 
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    padding: 40px;
+    background-color: none;
+    border-radius: 5px;
+    box-shadow: none;
+}
