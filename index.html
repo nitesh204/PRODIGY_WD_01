@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+    <title>Healthcare Product</title>
+</head>
+<body>
+    <header>
+        <nav class="fixed-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="background-image"></div>
+        <div class="content">
+        <h1>Welcome to Our Healthcare Product Website</h1>
+        <p> Discover Our Innovative Solutions</p>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Advanced Health Monitoring</li>
+            <li>Personalized Healthcare Plans</li>
+            <li>24/7 Customer Support</li>
+        </ul>
+    </section>
+
+    <section id="products" class="section">
+        <h2>Our Products</h2>
+        <div class="product">
+            <img src="https://atlas-content-cdn.pixelsquid.com/stock-images/patient-monitor-medical-OxWynJ4-600.jpg" alt="Product 1">
+            <p>Product 1: Health Monitor</p>
+        </div>
+        <div class="product">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71czQ9BQ-JL.jpg" alt="Product 2">
+            <p>Product 2: Diabetise Machine</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
